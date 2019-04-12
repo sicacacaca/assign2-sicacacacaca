@@ -60,7 +60,9 @@ void draw() {
 
     // Game Start
     case GAME_START:
- 
+     hogX=width/2;//fix
+     hogY=80;
+     
 // mouse action
      if (mouseX>248  && mouseX<248+144 && mouseY>360 && mouseY< 360+60){
       if (mousePressed){
@@ -71,6 +73,9 @@ void draw() {
       }
       break;
 
+
+
+
     
 // Game Run
 
@@ -78,6 +83,9 @@ void draw() {
   
   background(bg);
   image(soilImg,0,160);
+  
+//fix
+
 
 //grass
   colorMode(RGB);
@@ -145,7 +153,10 @@ case GAME_OVER:
   background(gameover);     
   if (mouseX>248  && mouseX<248+144 && mouseY>360 && mouseY< 360+60){
   if (mousePressed){
-    
+  
+    hogX=width/2;//fix
+     hogY=80;
+     
   gameState = GAME_PLAY;
   
   lifeX1=10;
